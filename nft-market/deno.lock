@@ -1,0 +1,16 @@
+{
+  "version": "4",
+  "remote": {
+    "https://deno.land/x/cbor@v1.4.1/decode.js": "7d5bf9c6cf1389a60bef978ba0046e13080d230b636d8c7b8259d2beb7aa3985",
+    "https://deno.land/x/cbor@v1.4.1/encode.js": "fc5068300e225c779f6a5fbf9bbaf74cb9b432f86e832c4f5db484767421bdae",
+    "https://deno.land/x/cbor@v1.4.1/index.js": "4119830fb6d106ec2a369442042803d57cff13cbc76f6aefc2f871aeb6e6bef5",
+    "https://deno.land/x/cbor@v1.4.1/iterators.js": "744e0469fe37c33bab3787608ced2f2cda014cb9352b3adbd949a2701f043aea"
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:lucid-cardano@~0.8.5"
+      ]
+    }
+  }
+}
