@@ -1,0 +1,79 @@
+{
+  "preamble": {
+    "title": "vbi/nft_marketplace",
+    "description": "Aiken contracts for project 'vbi/nft_marketplace'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.26-alpha+075668b"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "marketplace.marketplace",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/marketplace~1DatumMarketplace"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Void"
+        }
+      },
+      "compiledCode": "5902ea0100003232323232323223223225333006323232323253323300c3001300d37546022602400c2a66601800429444c8c8c8c8c94ccc0454ccc044cdd79998010049bad30053013375402060066602a60066602a601060266ea80412f5c06602a98103d87a80004bd7026103d87a800014a2266ebc00530103d87a800014a02944ccc004020dd6980218091baa00f4c150d8799fd8799f581c2fac4684a3e3a3cf47e38fb06c2f2ccb5ee01925cd3b8b79a1d58d45ffd8799fd8799fd8799f581c2125fe89ffc4438545542180d168bec7b3600466d4ddd654a60d5a69ffffffff00222323300100100422533301700114c103d87a800013232533301653330163371200c64a66602e601860306ea8004520001375a603860326ea8004c94ccc05cc030c060dd50008a60103d87a8000132330010013756603a60346ea8008894ccc070004530103d87a80001323232533301c3371e91100375c603a0062601c660406ea00052f5c026600a00a0046eb4c074008c080008c078004c8cc004004dd5980e180e980c9baa00322533301b00114c103d87a80001323232533301b3371e91100375c60380062601a6603e6e980052f5c026600a00a0046eacc070008c07c008c0740044cdd79804980c1baa300930183754004601260306ea8014528098041980d00125eb804cc010010004c06c008c064004dd2a400046026002460246026602660260026e1d200214a06464660020026eb0c044c048c048c048c048c048c048c048c048c038dd50029129998080008a50132533300e3371e6eb8c04c00801052889980180180098098009bae3001300c37540124601e602060200026eb0c034c038c038c028dd5000980600098041baa00114984d958c94ccc014cdc3a4000600c0022a666010600e0022930b0b1baa00153330023370e900018019baa00113232323232323232533300d3010002149858dd6980700098070011bae300c001300c002375c601400260140046eb8c020004c010dd50008b2b9a5573aaae7955cfaba05742ae89",
+      "hash": "78c746b3c0a2cef04ef9e4ca44edbefa7d1c8e9b2846f495f926fa54"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "Void": {
+      "title": "Unit",
+      "description": "The nullary constructor.",
+      "anyOf": [
+        {
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        }
+      ]
+    },
+    "marketplace/DatumMarketplace": {
+      "title": "DatumMarketplace",
+      "anyOf": [
+        {
+          "title": "DatumMarketplace",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "policyId",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "assetName",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "seller",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "price",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
